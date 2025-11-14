@@ -1,0 +1,39 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "order/order": [
+      "declarations",
+      "custom-properties",
+      "declarations",
+      {
+        "type": "at-rule",
+        "name": "media"
+      }
+    ],
+    "order/properties-order": [
+      {
+        "properties": [
+          "display",
+          "flex",
+          "flex-direction",
+          "flex-wrap",
+          "justify-content",
+          "align-items",
+          "grid",
+          "grid-template-columns",
+          "grid-template-rows",
+          "grid-area"
+        ]
+      },
+      {
+        "properties": [
+          "margin",
+          "padding",
+          "border",
+          "background",
+          "color"
+        ]
+      }
+    ]
+  }
+}
