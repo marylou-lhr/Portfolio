@@ -7,10 +7,10 @@
 @import url("tailwindcss");
 
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
+	--accent: #5a69fd;
+	--accent-dark: #263097;
 	--black: 15, 18, 25;
-	--gray: 96, 115, 159;
+	--gray: 54, 82, 153;
 	--gray-light: 229, 233, 240;
 	--gray-dark: 34, 41, 57;
 	--gray-gradient: rgb(var(--gray-light), 50%), #fff;
@@ -19,24 +19,8 @@
 		rgb(var(--gray), 33%);
 }
 
-@font-face {
-	font-family: Atkinson;
-	src: url("/fonts/atkinson-regular.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: Atkinson;
-	src: url("/fonts/atkinson-bold.woff") format("woff");
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
-
 body {
-	font-family: Atkinson, sans-serif;
+	font-family: "Arial", sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -48,8 +32,18 @@ body {
 	line-height: 1.7;
 }
 
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "DM Serif Text", sans-serif;
+}
+
 main {
-	width: 720px;
+	width: 1440px;
 	max-width: calc(100% - 2em);
 	margin: auto;
 	padding: 3em 1em;
@@ -183,4 +177,98 @@ hr {
 
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
+}
+
+.hero-section {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+.hero-section_title {
+	margin-bottom: 30px;
+}
+
+.hero-section_paragraph {
+	margin: 0;
+}
+
+.timeline {
+  width:100%;
+  max-width:800px;
+  background:#fff;
+  padding: 100px 50px;
+  position: relative;
+  box-shadow: 0.5rem 0.5rem 2rem 0 rgba(black, 0.2);
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left:calc(33% + 15px);
+    bottom: 0px;
+    width: 4px;
+    background: #ddd;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+}
+
+.event {
+  clear: both;
+  text-align: left;
+  position: relative;
+  .title {
+    margin-bottom: .5em;
+    float: left;
+    width: 33%;
+    padding-right: 30px;
+    text-align: right;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border: 4px solid black;
+      border-radius:100%;
+      top: 15%;
+      right: -8px;
+      z-index: 99;
+    }
+    h3 {
+      margin: 0;
+      font-size: 120%;
+    }
+    p {
+      margin: 0;
+      font-size: 100%;
+    }
+  }
+  .content {
+    margin: 0 0 3em;
+    float: right;
+    width: 66%;
+    padding-left: 30px;
+    p {
+      line-height: 1.4em;
+      &:first-child {
+        margin-top: 0;
+        font-weight: 400;
+      }
+    }
+    ul {
+      color:var(--gray);
+      padding-left: 0;
+      list-style-type: none;
+      li:before {
+        content: "–";
+        margin-right: .5em;
+      }
+    }
+  }
 }

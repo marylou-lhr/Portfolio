@@ -13,12 +13,29 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
+			<section class="hero-section">
+				<img src="/src/assets/pfp_no_bg.png" />
+				<div>
+					<h2 class="hero-section_title">Marylou Lohier</h2>
+					<p class="hero-section_paragraph">Je suis étudiante de 3e année en BUT Informatique à Anglet </p>
+					<p class="hero-section_paragraph">et développeuse web chez Panda One 🐼</p>
+				</div>
+			</section>
+			<section>
+				<h3>Ma situation actuelle</h3>
+				<div class="timeline">
+					<div class="event">
+						<div class="title">
+							<h3>Septembre 2025 - Août 2026</h3>
+						</div>
+						<div class="content">
+							<p>Etudiante alternante en BUT Informatique</p>
+							<p>Etudiante à l'IUT de Bayonne et du Pays Basque et Développeuse web chez Panda One</p>
+						</div>
+					</div>
+					<div class="event">...</div>
+				</div>
+			</section>
 			<p>
 				This template comes with a few integrations already configured in your
 				<code>astro.config.mjs</code> file. You can customize your setup with
