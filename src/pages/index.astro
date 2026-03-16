@@ -13,54 +13,171 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<section class="hero-section">
-				<img src="/src/assets/pfp_no_bg.png" />
-				<div>
-					<h2 class="hero-section_title">Marylou Lohier</h2>
-					<p class="hero-section_paragraph">Je suis étudiante de 3e année en BUT Informatique à Anglet </p>
-					<p class="hero-section_paragraph">et développeuse web chez Panda One 🐼</p>
-				</div>
-			</section>
-			<section>
-				<h3>Ma situation actuelle</h3>
-				<div class="timeline">
-					<div class="event">
-						<div class="title">
-							<h3>Septembre 2025 - Août 2026</h3>
+			<div class="content">
+				<section class="hero-section">
+					<img src="/src/assets/pfp_no_bg.png" />
+					<div>
+						<h2 class="hero-section_title">Marylou Lohier</h2>
+						<p class="hero-section_paragraph">Je suis étudiante de 3e année en BUT Informatique à Anglet </p>
+						<p class="hero-section_paragraph">et développeuse web chez Panda One 🐼</p>
+					</div>
+				</section>
+				<section>
+					<h3>Ma situation actuelle</h3>
+					<div class="timeline">
+						<div class="event">
+							<div class="title">
+								<h3>Septembre 2025 - Août 2026</h3>
+							</div>
+							<div class="event-content">
+								<p>Etudiante alternante en BUT Informatique à l'IUT de Bayonne et du Pays Basque</p>
+								<p>Développeuse web chez Panda One</p>
+							</div>
 						</div>
-						<div class="content">
-							<p>Etudiante alternante en BUT Informatique</p>
-							<p>Etudiante à l'IUT de Bayonne et du Pays Basque et Développeuse web chez Panda One</p>
+						<div class="event">
+							<div class="title">
+								<h3>Juillet 2025 - Août 2025</h3>
+							</div>
+							<div class="event-content">
+								<p>Développeuse web chez Panda One</p>
+							</div>
+						</div>
+						<div class="event">
+							<div class="title">
+								<h3>Avril 2025 - Juin 2025</h3>
+							</div>
+							<div class="event-content">
+								<p>Stagiaire développeuse web chez Panda One</p>
+							</div>
 						</div>
 					</div>
-					<div class="event">...</div>
-				</div>
-			</section>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+				</section>
+			</div>
 		</main>
 		<Footer />
 	</body>
 </html>
+<style>
+	.content {
+		width: 1440px;
+		max-width: calc(100% - 2em);
+		padding: 3em 1em;
+		margin: 0 auto;
+		background: var(--bkg);
+		border-radius: 15px;
+	}
+
+	img {
+		border: 5px outset var(--gray-light);
+		border-radius: 100%;
+	}
+	
+	.hero-section {
+		display: flex;
+		gap: 30px;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 100px;
+	}
+
+	@media screen and (max-width: 1024px) {
+		.hero-section {
+			flex-direction: column;
+		}
+
+	}
+
+	.hero-section_title {
+		margin-bottom: 30px;
+	}
+
+	.hero-section_paragraph {
+		margin: 0;
+	}
+
+	.timeline {
+	width:100%;
+	max-width:1440px;
+	background:var(--bkg);
+	padding: 0 50px;
+	position: relative;
+	margin: 50px 0;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0px;
+		left:calc(33% + 15px);
+		bottom: 0px;
+		width: 4px;
+		background: var(--gray-light);
+	}
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	} 
+	}
+
+	.event {
+	clear: both;
+	text-align: left;
+	position: relative;
+	.title {
+		margin-bottom: .5em;
+		float: left;
+		width: 33%;
+		padding-right: 30px;
+		text-align: right;
+		position: relative;
+		&:before {
+		content: '';
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		border: 8px solid var(--gray);
+		border-radius:100%;
+		top: 15%;
+		right: -8px;
+		z-index: 99;
+		}
+		h3 {
+		margin: 0;
+		font-size: 120%;
+		}
+		p {
+		margin: 0;
+		font-size: 100%;
+		}
+	}
+	.event-content {
+		margin: 0 0 3em;
+		float: right;
+		width: 66%;
+		padding-left: 30px;
+		p {
+		line-height: 1.4em;
+		margin-bottom: 0;
+		&:first-child {
+			margin-top: 0;
+			font-weight: 400;
+		}
+		}
+		ul {
+		color:var(--gray);
+		padding-left: 0;
+		list-style-type: none;
+		li:before {
+			content: "–";
+			margin-right: .5em;
+		}
+		}
+	}
+	}
+
+	@media screen and (max-width: 1024px) {
+		.event .title h3 {
+			font-size: 100%;
+			text-align: left;
+		}
+	}
+</style>

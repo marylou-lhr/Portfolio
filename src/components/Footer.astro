@@ -22,9 +22,14 @@ const today = new Date();
 </footer>
 <style>
 	footer {
-		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		color: rgb(var(--gray));
+		margin: 15px 1em 30px 1em;
+		padding: 1em;
+		background: var(--bkg);
+		border: 1px solid var(--gray-light);
+		border-radius: 15px;
+		width: 1440px;
+		max-width: calc(100% - 2em);
+		justify-self: center;
 		text-align: center;
 	}
 	.social-links {
@@ -38,6 +43,6 @@ const today = new Date();
 		color: rgb(var(--gray));
 	}
 	.social-links a:hover {
-		color: rgb(var(--gray-dark));
+		color: rgb(var(--gray-light));
 	}
 </style>
