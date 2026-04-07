@@ -1,0 +1,110 @@
+.header {
+    margin: 15px auto 30px auto;
+    padding: 1em;
+    background: var(--bkg);
+    border-radius: 15px;
+    max-width: calc(100% - 10rem);
+}
+h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+h2 a,
+h2 a.active {
+    text-decoration: none;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.menu a {
+    padding: 1em 0.5em;
+    color: var(--black);
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+}
+
+.menu a.active {
+    color: var(--accent);
+}
+.menu a:hover {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+.menu .btn-menu,
+.btn-menu
+{
+    cursor: pointer;
+}
+
+.btn-menu
+{
+    width: 25px;
+    height: 25px;
+    display: none;
+}
+
+.btn-menu svg {
+    fill: var(--black);
+    width: 25px;
+    height: 25px;
+}
+
+.social-links,
+.social-links a {
+    display: flex;
+}
+
+.active {
+    display: block !important;
+}
+
+@media (max-width: 720px) {
+    .header
+    {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .btn-menu
+    {
+        display: block;
+    }
+    .menu.active {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .menu svg
+    {
+        display: block;
+        float: right;
+    }
+
+    .internal-links.active {
+        display: block !important;
+    }
+
+    .social-links {
+        display: none;
+    }
+
+    .internal-links {
+        top: 80px;
+        left: 0;
+        position: absolute;
+        background-color: var(--bkg);
+        margin-left: auto;
+        margin-right: auto;
+        max-width: calc(100% - 10rem);
+        text-align: center;
+        display: none;
+    }
+}

@@ -1,0 +1,344 @@
+section {
+    max-width: calc(100% - 10rem);
+    padding: 3em 1em 1em 1em;
+    margin: 0 auto 30px auto;
+    background: var(--bkg);
+    border-radius: 30px;
+}
+
+.pfp {
+    border: 5px solid var(--gray-light);
+    border-radius: 100%;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-15px); /* Float up */
+  }
+  100% {
+    transform: translatey(0); /* Float down */
+  }
+}
+
+.hero-section {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-section {
+        flex-direction: column;
+    }
+
+}
+
+.hero-section_title {
+    margin-bottom: 30px;
+}
+
+.hero-section_paragraph {
+    margin: 0 0 0.5rem 1rem;
+}
+
+.a-propos
+{
+    margin: 1rem 0 1rem 1rem;
+}
+
+.a-propos p {
+    padding-bottom: 15px;
+}
+
+.timeline {
+    width: 100%;
+    max-width: 1440px;
+    background: var(--bkg);
+    padding: 0 50px;
+    position: relative;
+    margin: 50px 0;
+    &:before {
+        content: '';
+        position: absolute;
+        top: -15%;
+        left:calc(33% + 15px);
+        bottom: 0px;
+        width: 4px;
+        background: var(--accent);
+    }
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    } 
+}
+
+.event {
+    clear: both;
+    text-align: left;
+    position: relative;
+    .title {
+        margin-bottom: .5em;
+        float: left;
+        width: 33%;
+        padding-right: 30px;
+        text-align: right;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border: 8px solid var(--accent);
+            border-radius:100%;
+            top: 15%;
+            right: -8px;
+            z-index: 99;
+        }
+        h3 {
+            margin: 0;
+            font-size: 120%;
+        }
+        p {
+            margin: 0;
+            font-size: 100%;
+        }
+    }
+}
+
+.event-content {
+    margin: 0 0 3em;
+    float: right;
+    width: 66%;
+    padding-left: 30px;
+    p {
+        line-height: 1.4em;
+        margin-bottom: 0;
+        &:first-child {
+            margin-top: 0;
+            font-weight: 400;
+        }
+    }
+    ul {
+        color:var(--gray);
+        padding-left: 0;
+        list-style-type: none;
+        li:before {
+            content: "–";
+            margin-right: .5em;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .event .title h3 {
+        font-size: 100%;
+        text-align: left;
+    }
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .projects {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+.skills,
+.projects {
+    display: grid;
+    gap: 100px;
+    max-width: 1440px;
+    margin: 0 auto 50px auto;
+    width: 100%;
+}
+
+.skills {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.projects {
+    grid-template-columns: 1fr 1fr;
+}
+
+.skills-title {
+    margin-bottom: 30px;
+}
+
+.projects-title {
+    margin-bottom: 50px;
+}
+
+.skills-bloc {
+    border: 1px solid var(--gray);
+    padding: 25px 15px;
+    border-radius: 15px;
+}
+
+.skills-bloc,
+.projects-bloc {
+    border: 2px solid rgb(138 185 241 / 25%);
+}
+
+.projects-bloc {
+    padding: 30px;
+    border-radius: 25px;
+    justify-items: center;
+}
+
+.skills-bloc:hover,
+.projects-bloc:hover {
+    animation: float 3s ease-in-out infinite;
+}
+
+.skills-bloc-title,
+.projects-bloc-title {
+    margin-bottom: 15px;
+}
+
+.skills-bloc-list li
+{
+    padding-left: calc(30px);
+    margin-left: 13px;
+    background-size: 20px 20px !important;
+}
+
+.skills-bloc-list #html
+{
+    background: url(/src/assets/html.svg) no-repeat left center;
+}
+
+.skills-bloc-list #css
+{
+    background: url(/src/assets/css.svg) no-repeat left center;
+}
+
+.skills-bloc-list #javascript
+{
+    background: url(/src/assets/js.svg) no-repeat left center;
+}
+
+.skills-bloc-list #reactjs
+{
+    background: url(/src/assets/react.svg) no-repeat left center;
+}
+
+.skills-bloc-list #angular
+{
+    background: url(/src/assets/angular.svg) no-repeat left center;
+}
+
+.skills-bloc-list #laravel
+{
+    background: url(/src/assets/laravel.svg) no-repeat left center;
+}
+
+.skills-bloc-list #vscode
+{
+    background: url(/src/assets/vscode.svg) no-repeat left center;
+}
+
+.skills-bloc-list #clickup
+{
+    background: url(/src/assets/clickup.svg) no-repeat left center;
+}
+
+.skills-bloc-list #git
+{
+    background: url(/src/assets/git.svg) no-repeat left center;
+}
+
+.skills-bloc-list #autonome
+{
+    background: url(/src/assets/autonomie.svg) no-repeat left center;
+}
+
+.skills-bloc-list #curiosite
+{
+    background: url(/src/assets/curiosite.png) no-repeat left center;
+}
+
+.skills-bloc-list #adaptabilite
+{
+    background: url(/src/assets/adaptabilite.svg) no-repeat left center;
+}
+
+.skills-bloc-list #francais
+{
+    background: url(/src/assets/france.jpg) no-repeat left center;
+    background-size: 20px 15px !important;
+}
+
+.skills-bloc-list #anglais
+{
+    background: url(/src/assets/anglais.jpg) no-repeat left center;
+    background-size: 20px 15px !important;
+}
+
+.skills-bloc-list #technologie
+{
+    background: url(/src/assets/technologie.svg) no-repeat left center;
+}
+
+.skills-bloc-list #psychologie
+{
+    background: url(/src/assets/psychologie.svg) no-repeat left center;
+}
+
+.skills-bloc-list #design
+{
+    background: url(/src/assets/design.svg) no-repeat left center;
+}
+
+.projects-bloc_text {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.projects-bloc_skills {
+    display: flex;
+    gap: 15px;
+}
+
+.projects-bloc_skills li {
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: rgb(138 185 241 / 25%);
+}
+
+.download-btn {
+    border-radius: 10px;
+    background-color: rgb(138 185 241 / 25%);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px 15px;
+    color: black;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.download-btn:hover {
+    color: var(--accent-dark);
+}
+
+.download-btn svg {
+    height: 15px;
+    width: 15px;
+}
+
+.download-btn:hover svg {
+    fill: var(--accent-dark);
+}
