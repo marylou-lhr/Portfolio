@@ -1,0 +1,241 @@
+section {
+    max-width: calc(100% - 10rem);
+    padding: 3em 3em 2em 3em;
+    margin: 0 auto 30px auto;
+    background: var(--bkg);
+    border-radius: 30px;
+}
+
+.intro--title,
+.section--title {
+    margin-bottom: 30px;
+}
+
+.intro--list {
+    list-style: disc;
+    padding-left: 30px;
+}
+
+.section--content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 1023px) {
+    section {
+        padding: 3em 1em 2em 1em;
+    }
+
+    .section--content {
+        grid-template-columns: 1fr;
+        font-size: 16px;
+        justify-self: left;
+    }
+
+    .section--content div {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+    .section--content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.section--content div,
+.soft-skill p
+{
+    padding-left: calc(30px);
+    margin-left: 13px;
+    background-size: 20px 20px !important;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+.section--content div span {
+    font-size: 18px;
+}
+
+.section--content #html
+{
+    background: url(/src/assets/html.svg) no-repeat left center;
+}
+
+.section--content #css
+{
+    background: url(/src/assets/css.svg) no-repeat left center;
+}
+
+.section--content #javascript
+{
+    background: url(/src/assets/js.svg) no-repeat left center;
+}
+
+.section--content #java
+{
+    background: url(/src/assets/java.svg) no-repeat left center;
+}
+
+.section--content #cplusplus
+{
+    background: url(/src/assets/cplusplus.svg) no-repeat left center;
+}
+
+.section--content #typescript
+{
+    background: url(/src/assets/typescript.svg) no-repeat left center;
+}
+
+.section--content #bash
+{
+    background: url(/src/assets/bash.svg) no-repeat left center;
+}
+
+.section--content #python
+{
+    background: url(/src/assets/python.svg) no-repeat left center;
+}
+
+.section--content #sql
+{
+    background: url(/src/assets/sql.svg) no-repeat left center;
+}
+
+.section--content #reactjs
+{
+    background: url(/src/assets/react.svg) no-repeat left center;
+}
+
+.section--content #angular
+{
+    background: url(/src/assets/angular.svg) no-repeat left center;
+}
+
+.section--content #laravel
+{
+    background: url(/src/assets/laravel.svg) no-repeat left center;
+}
+
+.section--content #astro
+{
+    background: url(/src/assets/astro.svg) no-repeat left center;
+}
+
+.section--content #php, .section--content #twig
+{
+    background: url(/src/assets/php.svg) no-repeat left center;
+}
+
+.section--content #qt
+{
+    background: url(/src/assets/qt.svg) no-repeat left center;
+}
+
+.section--content #vscode
+{
+    background: url(/src/assets/vscode.svg) no-repeat left center;
+}
+
+.section--content #clickup
+{
+    background: url(/src/assets/clickup.svg) no-repeat left center;
+}
+
+.section--content #git
+{
+    background: url(/src/assets/git.svg) no-repeat left center;
+}
+
+.section--content #wordpress
+{
+    background: url(/src/assets/wordpress.svg) no-repeat left center;
+}
+
+.section--content #drupal
+{
+    background: url(/src/assets/drupal.svg) no-repeat left center;
+}
+
+.section--content #microsoft
+{
+    background: url(/src/assets/microsoft.svg) no-repeat left center;
+}
+
+.section--content #google
+{
+    background: url(/src/assets/google.svg) no-repeat left center;
+}
+
+.section--content #notion
+{
+    background: url(/src/assets/notion.svg) no-repeat left center;
+}
+
+.section--content #autonome
+{
+    background: url(/src/assets/autonomie.svg) no-repeat left center;
+}
+
+.section--content #curiosite
+{
+    background: url(/src/assets/curiosite.png) no-repeat left center;
+}
+
+.section--content #adaptabilite
+{
+    background: url(/src/assets/adaptabilite.svg) no-repeat left center;
+}
+
+.section--content #francais
+{
+    background: url(/src/assets/france.jpg) no-repeat left center;
+    background-size: 20px 15px !important;
+}
+
+.section--content #anglais
+{
+    background: url(/src/assets/anglais.jpg) no-repeat left center;
+    background-size: 20px 15px !important;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: lightgray;
+    border-radius: 10px;
+    height: 10px;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: var(--accent-dark);
+    border-radius: 10px;
+    height: 10px;
+}
+
+.warning {
+    padding: 15px 30px;
+    color: darkred;
+    background-color: rgba(240, 128, 128, 0.2);
+    display: flex;
+    gap: 15px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.warning svg {
+    fill: darkred;
+    height: 30px;
+    width: 30px;
+}
+
+.section--content.soft-skill {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.soft-skill span {
+    color: var(--accent-dark);
+}
