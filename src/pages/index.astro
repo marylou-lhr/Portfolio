@@ -1,12 +1,15 @@
 ---
 import Layout from '../components/Layout.astro';
 import '../styles/index.css';
+import pfp from "/src/assets/pfp_no_bg.png?url";
+import gds from '/src/assets/gds.png?url';
+import vhs from "/src/assets/vhs.png?url";
 ---
 
 <Layout>
 	<div>
 		<section class="hero-section">
-			<img src="/src/assets/pfp_no_bg.png" class="pfp" />
+			<img src={ pfp } class="pfp" />
 			<div>
 				<h1 class="hero-section_title">Marylou Lohier</h1>
 				<h2 class="hero-section_paragraph">Etudiante en informatique</p>
@@ -137,7 +140,7 @@ import '../styles/index.css';
 			<h3 class="projects-title">Mes derniers projets universitaires</h3>
 			<div class="projects">
 				<div class="projects-bloc">
-					<img src="/src/assets/gds.png" alt="">
+					<img src={ gds } alt="">
 					<div>
 						<h4 class="projects-bloc--title">Gestion des stages</h4>
 						<p class="projects-bloc--text">
@@ -160,7 +163,7 @@ import '../styles/index.css';
 					</div>
 				</div>
 				<div class="projects-bloc">
-					<img src="/src/assets/vhs.png" alt="">
+					<img src={ vhs } alt="">
 					<div>
 						<h4 class="projects-bloc--title">Video Home Share</h4>
 						<p class="projects-bloc--text">

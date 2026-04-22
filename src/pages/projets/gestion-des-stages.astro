@@ -1,6 +1,7 @@
 ---
 import Layout from '../../components/Layout.astro';
 import '../../styles/projects.css';
+import gds from '/src/assets/gds.png?url';
 ---
 
 <Layout>
@@ -8,7 +9,7 @@ import '../../styles/projects.css';
         <section>
             <h1 class="projects-bloc--title project-page">Gestion des stages</h1>
             <div>
-                <img src="/src/assets/gds.png" alt="Extrait de l'interface">
+                <img src={ gds } alt="Extrait de l'interface">
                 <h3 class="project-page--desc">Description</h3>
                 <p class="projects-bloc--text project-page">
                     Cette application a pour but de condenser dans une seule application plusieurs fonctionnalités autour du stage qui sont répartis dans plusieurs outils universitaires et externes.

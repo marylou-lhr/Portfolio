@@ -1,6 +1,7 @@
 ---
 import Layout from '../components/Layout.astro';
 import '../styles/about.css';
+import pfp from "/src/assets/pfp_no_bg.png?url";
 ---
 
 <Layout>
@@ -8,7 +9,7 @@ import '../styles/about.css';
         <section>
             <h1>À propos de moi</h1>
             <div class="a-propos">
-                <img src="/src/assets/pfp_no_bg.png" class="pfp" />
+                <img src={ pfp } class="pfp" />
                 <p class="a-propos--texte">
                     Je suis étudiante en alternance de 3e année de BUT Informatique à l'IUT de Bayonne et du Pays Basque et je travaille en tant que développeuse web pour Panda One à Anglet.
 

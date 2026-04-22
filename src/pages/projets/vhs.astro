@@ -1,6 +1,7 @@
 ---
 import Layout from '../../components/Layout.astro';
 import '../../styles/projects.css';
+import vhs from "/src/assets/vhs.png?url";
 ---
 
 <Layout>
@@ -8,7 +9,7 @@ import '../../styles/projects.css';
         <section>
             <h1 class="projects-bloc--title project-page">VHS - Video Home Share</h1>
             <div>
-                <img src="/src/assets/vhs.png" alt="Extrait de l'interface">
+                <img src={ vhs } alt="Extrait de l'interface">
                 <h3 class="project-page--desc">Description</h3>
                 <p class="projects-bloc--text project-page">
                     Ce site internet a pour but de réunir les passionnés de films et séries dans une application qui permet de consulter et noter des films et séries, de parler dans un forum avec d'autres passionnés et de se défier grâce au quiz.

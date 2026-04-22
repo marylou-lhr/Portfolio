@@ -1,6 +1,11 @@
 ---
 import Layout from '../components/Layout.astro';
 import '../styles/projects.css';
+import gds from '/src/assets/gds.png?url';
+import vhs from "/src/assets/vhs.png?url";
+import ld from "/src/assets/lecteurDiaporama.png?url";
+import isr from "/src/assets/installation_services_reseau.png?url";
+import bd from "/src/assets/creation_bd.png?url";
 ---
 
 <Layout>
@@ -14,7 +19,7 @@ import '../styles/projects.css';
         <section>
            <div class="projects">
 				<div class="projects-bloc">
-					<img src="/src/assets/gds.png" alt="">
+					<img src={ gds } alt="">
 					<div>
 						<h4 class="projects-bloc--title">Gestion des stages</h4>
 						<p class="projects-bloc--text">
@@ -44,7 +49,7 @@ import '../styles/projects.css';
 					</div>
 				</div>
 				<div class="projects-bloc">
-					<img src="/src/assets/vhs.png" alt="">
+					<img src={ vhs } alt="">
 					<div>
 						<h4 class="projects-bloc--title">Video Home Share</h4>
 						<p class="projects-bloc--text">
@@ -61,7 +66,7 @@ import '../styles/projects.css';
 								JavaScript
 							</li>
 						</ul>
-                        <a href="/Portfolio/projets/vhs" class="projects-bloc_btn">
+                        <a href={ vhs } class="projects-bloc_btn">
                             En savoir plus
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
@@ -71,7 +76,7 @@ import '../styles/projects.css';
 					</div>
 				</div>
                 <div class="projects-bloc">
-					<img src="/src/assets/lecteurDiaporama.png" alt="">
+					<img src={ ld } alt="">
 					<div>
 						<h4 class="projects-bloc--title">Lecteur de diaporama</h4>
 						<p class="projects-bloc--text">
@@ -95,7 +100,7 @@ import '../styles/projects.css';
 					</div>
 				</div>
                 <div class="projects-bloc">
-                    <img src="/src/assets/installation_services_reseau.png" alt="">
+                    <img src={ isr } alt="">
                     <div>
                         <h4 class="projects-bloc--title">Installation de services réseau</h4>
                         <p class="projects-bloc--text">
@@ -124,7 +129,7 @@ import '../styles/projects.css';
                     </div>
 				</div>
                 <div class="projects-bloc">
-                    <img src="/src/assets/creation_bd.png" alt="">
+                    <img src= alt="">
                     <div>
                         <h4 class="projects-bloc--title">Création d'une base de données</h4>
                         <p class="projects-bloc--text">
@@ -138,7 +143,7 @@ import '../styles/projects.css';
                                 Looping
                             </li>
                         </ul>
-                        <a href="/Portfolio/projets/creation-bd" class="projects-bloc_btn">
+                        <a href={ bd } class="projects-bloc_btn">
                             En savoir plus
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
