@@ -1,0 +1,61 @@
+---
+import Layout from '../../components/Layout.astro';
+import '../../styles/projects.css';
+---
+
+<Layout>
+    <div>
+        <section>
+            <h1 class="projects-bloc--title project-page">Création d'une base de données</h1>
+            <div>
+                <img src="/src/assets/creation_bd.png" alt="Extrait de l'interface">
+                <h3 class="project-page--desc">Description</h3>
+                <p class="projects-bloc--text project-page">
+                    Le but de ce projet était de pouvoir réaliser une base de données pour une chaîne de magasins suivant les besoins du client et différentes contraintes données par celui-ci.
+                </p>
+                <h3>Étapes :</h3>
+                <ul class="project-page--fonctionnalites">
+                    <li>
+                        <h5>Modélisation conceptuelle des données</h5>
+                        <p>
+                            Durant cette première étape, on commence à mettre en place les différents aspects du fonctionnement de la chaîne, notamment les clients, les magasins, les abonnements, les tarifs, les produits...
+                            Chaque aspect devient donc une table, et chaque table possèdera des attributs. Par exemple, chaque magasin aura un numéro, un numéro de téléphone et un courriel.
+                            Plusieurs relectures, ajouts, modifications et suppression seront faits jusqu'à obtenir le meilleur résultat possible.
+                            En plus du schéma, des commentaires y seront accompagnés pour justifier certains choix de représentation.
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Dictionnaire des données</h5>
+                        <p>
+                            Le dictionnaire des données réunit chaque table dans son tableau et chaque attribut sera détaillé, avec notamment son nom, son type (numéro, chaîne de caractères...), sa taille dans la base de données...
+                            Cette étape sera effectuée pour les deux modélisations afin d'être clair et précis sur les spécifications de chaque table et pour faciliter la transformation du schéma en base de données.
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Modélisation logique des données</h5>
+                        <p>
+                            La modélisation logique des données est une visualisation en liste qui permet de mieux voir les clés primaires (les index d'une table qui permet de distinguer chaque magasin par exemple grâce au numéro), les clés étrangères et donc les liens avec d'autres tables.
+                            Cela permet de voir et de décider de la structure des données.
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Réalisation de la base de données</h5>
+                        <p>
+                            Pour finir, on utilise le langage SQL pour composer un script qui permettra de créer la base de données en suivant les schémas et le dictionnaire des données.
+                            Ce script pourra être utilisé par un Système de Gestion des Bases de Données (SGBD) qui permettra par la suite de peupler cette base et d'être utilisée par la chaîne de magasins.
+                        </p>
+                    </li>
+                </ul>
+                <h3 class="projects-bloc--title">Technologies utilisées :</h3>
+                <ul class="projects-bloc_skills">
+                    <li>
+                        SQL
+                    </li>
+                    <li>
+                        Looping
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</Layout>

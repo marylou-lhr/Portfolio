@@ -1,0 +1,70 @@
+---
+import Layout from '../../components/Layout.astro';
+import '../../styles/projects.css';
+---
+
+<Layout>
+    <div>
+        <section>
+            <h1 class="projects-bloc--title project-page">Gestion des stages</h1>
+            <div>
+                <img src="/src/assets/gds.png" alt="Extrait de l'interface">
+                <h3 class="project-page--desc">Description</h3>
+                <p class="projects-bloc--text project-page">
+                    Cette application a pour but de condenser dans une seule application plusieurs fonctionnalités autour du stage qui sont répartis dans plusieurs outils universitaires et externes.
+                    Cet outil pourra être utilisé par les étudiants, le personnel et le responsable des stages mais aussi pourra être utilisé pour l'alternance car similaire au stage.
+                    Lorsque cette application sera suffisamment développée par le(s) groupe(s) suivant(s), elle pourra être également utilisé par d'autres universités.
+                </p>
+                <h3>Fonctionnalités réalisées :</h3>
+                <ul class="project-page--fonctionnalites">
+                    <li>
+                        <h5>Renseignement, visualisation et gestion des recherches de stage</h5>
+                        <p>
+                            Dès le début de la 2e année et 3e année, les étudiants n'ayant pas d'alternance doivent trouver un stage avant début mars ou avril.
+                            Chaque contact avec une entreprise doit être renseigné dans leur journal de recherche, qui pourra leur permettre de garder une trace de contact mais aussi au responsable de stages de voir où les étudiants en sont et si nécessaire de les aider dans leur recherche.
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Création, visualisation et gestion des fiches descriptives</h5>
+                        <p>
+                            Une fois qu'un étudiant trouve un stage, il pourra renseigner les informations du stage et de l'entreprise dans une fiche descriptive, qui sera consulté et géré par le responsable des stages.
+                            Sur la page d'accueil, le responsable des stages possède un tableau de bord dans la page des fiches descriptives qui permet de voir l'avancement de chaque étudiant.
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Génération, visualisation et gestion des planning</h5>
+                        <p>
+                            Lorsque les dates des soutenances de stage approchent, l'adjointe administrative fait générer un planning grâce à un algorithme qui attribue chaque étudiant d'une promotion à un horaire en prenant en compte plusieurs facteurs :
+                        </p>
+                        <ul class="project-page--fonctionnalites">
+                            <li>Chaque soutenance est composé d'un étudiant, d'une durée, d'un horaire, d'un professeur référent et d'un professeur lecteur.</li>
+                            <li>Un étudiant pourrait avoir un tier-temps et donc sa soutenance doit durer plus longtemps.</li>
+                            <li>Chaque professeur possède un quota d'étudiant à respecter.</li>
+                            <li>Il faut au moins un professeur informaticien parmi ceux qui évaluent un étudiant.</li>
+                            <li>...</li>
+                        </ul>
+                        <p>Après la génération de ce planning, l'adjointe peut ajouter, déplacer ou supprimer une ou plusieurs soutenance(s).</p>
+                    </li>
+                    <li>
+                        À l'avenir, plusieurs fonctionnalités pourront être développées par le(s) groupe(s) suivant(s) tels que la gestion de données, la gestion des grilles d'évaluation...
+                    </li>
+                </ul>
+                <h3 class="projects-bloc--title">Technologies utilisées :</h3>
+                <ul class="projects-bloc_skills">
+                    <li>
+                        Angular - TypeScript
+                    </li>
+                    <li>
+                        PHP - Laravel
+                    </li>
+                    <li>
+                        HTML
+                    </li>
+                    <li>
+                        CSS
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</Layout>

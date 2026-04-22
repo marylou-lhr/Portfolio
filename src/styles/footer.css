@@ -17,9 +17,12 @@
 
 	.f-social-links a {
 		text-decoration: none;
-		color: rgb(var(--gray));
+	}
+
+	.f-social-links a {
+		color: black;
 	}
 	
 	.f-social-links a:hover {
-		color: rgb(var(--gray-light));
+		color: var(--accent);
 	}

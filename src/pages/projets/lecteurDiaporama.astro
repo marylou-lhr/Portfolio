@@ -1,0 +1,53 @@
+---
+import Layout from '../../components/Layout.astro';
+import '../../styles/projects.css';
+---
+
+<Layout>
+    <div>
+        <section>
+            <h1 class="projects-bloc--title project-page">Lecteur de diaporama</h1>
+            <div>
+                <img src="/src/assets/lecteurDiaporama.png" alt="Extrait de l'interface">
+                <h3 class="project-page--desc">Description</h3>
+                <p class="projects-bloc--text project-page">
+                    Cette application développée avec QTCreator permet de visionner les images d'un dossier sélectionné.
+                </p>
+                <h3>Fonctionnalités réalisées :</h3>
+                <ul class="project-page--fonctionnalites">
+                    <li>
+                        <h5>Lecture d'un diaporama</h5>
+                        <p>
+                            L'utilisateur peut lire un diaporama de manière automatique.
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Passer à l'image suivante ou précédente.</h5>
+                        <p>
+                            Grâce aux flèches, l'utilisateur peut visionner l'image suivante ou précédente.
+                            Cela fera passer la lecture du diaporama en mode manuel.
+                        </p>
+                    </li>
+                    <li>
+                        <h5>Mise en pause de la lecture automatique.</h5>
+                        <p>
+                            Il est possible de mettre en pause la lecture automatique d'un diaporama pour visionner plus longtemps une image.
+                        </p>
+                    </li>
+                </ul>
+                <h3 class="projects-bloc--title">Technologies utilisées :</h3>
+                <ul class="projects-bloc_skills">
+                    <li id="php">
+                        PHP - Twig
+                    </li>
+                    <li id="css">
+                        CSS
+                    </li>
+                    <li id="javascript">
+                        JavaScript
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</Layout>

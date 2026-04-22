@@ -1,0 +1,46 @@
+---
+import Layout from '../../components/Layout.astro';
+import '../../styles/projects.css';
+---
+
+<Layout>
+    <div>
+        <section>
+            <h1 class="projects-bloc--title project-page">Installation de services réseau</h1>
+            <div>
+                <img src="/src/assets/installation_services_reseau.png" alt="Extrait de l'interface">
+                <h3 class="project-page--desc">Description</h3>
+                <p class="projects-bloc--text project-page">
+                    Ce projet a pour but d'apprendre à installer des services sur un réseau d'entreprise séparés en plusieurs sous-réseaux : Administratif, Internet, Entrepôt et Serveur.
+                    Chaque appareil possède un nom suivant le format : La 1re lettre du nom du sous-réseau suivi d'un chiffre.
+                    Les appareils commençant par R représentent des routeurs.
+                    Les appareils FTP et entreposages sont des serveurs : Le serveur FTP permet le transfert de fichiers au sein du réseau et le serveur entreposage possède notamment une page web qui aura pour but de gérer l'entreposage.
+                    Enfin, l'appareil DHCP permet d'adresser dynamiquement une adresse IP pour chaque appareil (hors routeurs qui ont besoin d'une adresse statique pour que chaque appareil sache l'adresse de son routeur).
+                    Cet appareil est configuré de sorte à définir les différents sous-réseaux en donnant des plages d'adresses.
+                </p>
+                <h3>Étapes :</h3>
+                <ul class="project-page--fonctionnalites">
+                    <li>Plan adressage complet</li>
+                    <li>Routages, configuration DHCP et adressages IP</li>
+                    <li>Tests de communication entre machines</li>
+                    <li>Configuration du serveur FTP</li>
+                    <li>Connexion au serveur FTP via une machine du sous-réseau administration</li>
+                    <li>Configuration d'entreposage</li>
+                    <li>Affichage du serveur entreposage via une machine entrepôt</li>
+                </ul>
+                <h3 class="projects-bloc--title">Technologies utilisées :</h3>
+                <ul class="projects-bloc_skills">
+                    <li>
+                        Marionnet
+                    </li>
+                    <li>
+                        Bash
+                    </li>
+                    <li>
+                        HTML
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</Layout>

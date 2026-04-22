@@ -1,0 +1,126 @@
+section {
+    max-width: calc(100% - 10rem);
+    padding: 3em 1em 1em 1em;
+    margin: 0 auto 30px auto;
+    background: var(--bkg);
+    border-radius: 30px;
+}
+
+.projects {
+    display: grid;
+    gap: 50px;
+    max-width: 1440px;
+    margin: 0 auto 50px auto;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 1260px) {
+    .projects {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+.projects-bloc {
+    border: 2px solid rgb(138 185 241 / 25%);
+    border-radius: 25px;
+    justify-items: center;
+}
+
+.projects-bloc:hover {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-15px); /* Float up */
+  }
+  100% {
+    transform: translatey(0); /* Float down */
+  }
+}
+
+.projects-bloc--title {
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.projects-bloc--title.project-page {
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.projects-bloc--text.project-page {
+    white-space: pre-line;
+}
+
+.projects-bloc--text,
+.projects-bloc_skills {
+    margin: 15px 30px 30px 30px;
+}
+
+.projects-bloc_skills {
+    display: flex;
+    gap: 15px;
+}
+
+.projects-bloc_skills li,
+.projects-bloc_btn {
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+.projects-bloc_skills li {
+    background-color: rgb(138 185 241 / 25%);
+}
+
+.projects-bloc_btn {
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+    color: black;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    align-items: center;
+    background-color: var(--accent-dark);
+    color: white;
+}
+
+.projects-bloc_btn:hover {
+    border: 1px solid var(--accent-dark);
+    background-color: white;
+    color: var(--accent-dark);
+}
+
+.projects-bloc_btn:hover svg {
+    fill: var(--accent-dark);   
+}
+
+.projects-bloc_btn svg {
+    height: 15px;
+    width: 15px;
+    fill: white;
+}
+
+.project-page--desc {
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+
+.project-page--fonctionnalites {
+    list-style: disc;
+    padding-left: 50px;
+}
+
+.project-page--fonctionnalites li h5 {
+    margin-left: 0;
+}
+
+.project-page--fonctionnalites li p {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
